@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>karan</div>
+    <img id="dog" wigth="300" alt="photo" />
+    <script>
+      async function getDogPic() {
+        try {
+          const data = await fetch("https://dog.ceo/api/breeds/image/random");
+          console.log(data);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    </script>
+  </body>
+</html>
