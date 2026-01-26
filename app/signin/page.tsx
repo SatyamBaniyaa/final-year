@@ -7,12 +7,12 @@ export default function SignIn(){
         {/* close */}
 
         <button className="absolute right-4 top-4 text-netural-400 hover:text-netural-600">
-           ✕
+          x
         </button>
 
         {/* Title */}
         <h2 className="text-center text-2xl font-semibold">
-          Sign in to Vibe
+          SigIn in to Vibe
         </h2>
         <p className="mt-2 text-center text-sm text-neutral-500">
           Welcome back! Please sign in to continue

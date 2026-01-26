@@ -5,7 +5,6 @@ export default function Home() {
                 { label: "Netflix clone", icon: "/netflix.svg" },
                 { label: "bus clone", icon: "/bus.svg" },
                 { label: "Sunrise clone", icon: "/sunrise.svg" },
-                 { label: "file manager clone", icon: "/file.svg" },
                 { label: "Admin clone", icon: "/admin.svg" }
               ]
 
