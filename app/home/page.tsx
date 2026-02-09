@@ -1,11 +1,14 @@
 import Image from "next/image";
+import { DynamicIcon } from 'lucide-react/dynamic';
+
+
+
 
 export default function Home() {
   const RecentData = [
-                { label: "Netflix clone", icon: "/netflix.svg" },
-                { label: "bus clone", icon: "/bus.svg" },
-                { label: "Sunrise clone", icon: "/sunrise.svg" },
-                { label: "Admin clone", icon: "/admin.svg" }
+                { label: "Movie Clon", icon: 'clapperboard' },
+                { label: "Sunrise clone", icon: 'arrow-down' },
+                { label: "Admin clone", icon: 'arrow-up' }
               ]
 
   return(
@@ -70,11 +73,11 @@ export default function Home() {
 
 {/* Recent Data */}
 
-<div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 flex-1">
+<div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 flex-1" >
   {RecentData.map(item=>(
-    <div>
+    <div key={item.label} id="iconss">
       {item.label}
-      <img src={item.icon} alt="my-image" />
+      <DynamicIcon name={item.icon}/>
     </div>
   ))}
 </div>
