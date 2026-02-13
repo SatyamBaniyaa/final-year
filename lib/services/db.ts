@@ -1,7 +1,7 @@
 // lib/mongodb.js
 import mongoose from 'mongoose';
 
-const MONGODB_URL = process.env.MONGODB_URI;
+const MONGODB_URL = process.env.MONGOOB_URL;
 
 export default dbConnect;
 

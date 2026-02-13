@@ -6,10 +6,16 @@ const Login =z.object({
   password:z.string().min(3,'')
 })
 
-const Signin =z.object({
+const SignUp =z.object({
   email:z.email(),
+  name: z.string().min(3, "Name is required"),
   password:z.string("min 12 characters")
 
 })
 
-export { Login,Signin}
+const home =z.object({
+  prompt:z.string().min(3,"minimum 10 words")
+
+})
+
+export { Login, SignUp, home}
